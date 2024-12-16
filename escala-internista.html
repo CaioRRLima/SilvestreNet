@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalas - SilvestreNet</title>
+    <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+
+    <link rel="icon" href="./img/logo/Favicon.png" type="image/svg+xml">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<style>
+  /* Classe que ativa a animação */
+  .ativo {
+      animation: fadeInDown 1s ease-in-out forwards;
+  }
+
+  /* Exemplo de animação */
+  @keyframes fadeInDown {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+</style>
+
+<body class="introducao-body">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">
+          <img src="./img/logo/has.svg" width="196" height="92" alt="Silvestre">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                href="./servicos.html" 
+                id="ServicosDropdown" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Serviços
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="ServicosDropdown" style="background-color: #0000007f; ">
+                <li><a class="dropdown-item nav-link" href="https://ramal.hasilvestre.org.br/" target="_blank" rel="noopener noreferrer">Ramais</a></li>
+                <li><a class="dropdown-item nav-link" href="https://login-rh.sdasystems.org/Account/Login" target="_blank" rel="noopener noreferrer">RH Online</a></li>
+                <li><a class="dropdown-item nav-link" href="https://app.powerbi.com/home?experience=power-bi" target="_blank" rel="noopener noreferrer">Power BI</a></li>
+                <li><a class="dropdown-item nav-link" href="https://hasilvestre.neovero.com/" target="_blank" rel="noopener noreferrer">Neovero</a></li>
+                <li><a class="dropdown-item nav-link" href="http://qualidade/se/" target="_blank" rel="noopener noreferrer">MVGE</a></li>
+                <li><a class="dropdown-item nav-link" href="http://mvautorizadorguias.silvestresaude.com.br:8005/mvautorizadorguias/" target="_blank" rel="noopener noreferrer">Autorizador WEB</a></li>
+                <li><a class="dropdown-item nav-link" href="https://redesilvestre.com/exames/" target="_blank" rel="noopener noreferrer">Exames Online</a></li>
+                <li><a class="dropdown-item nav-link" href="https://pacs.lotusrad.com.br/netpacs/login" target="_blank" rel="noopener noreferrer">NetPacs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                href="#" 
+                id="institucionalDropdown" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Institucional
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="institucionalDropdown" style="background-color: #0000007f; ">
+                <li><a class="dropdown-item nav-link" href="./calendario-geral.html">Calendário Geral</a></li>
+                <li><a class="dropdown-item nav-link" href="./planejamento.html">Planejamento</a></li>
+                <li><a class="dropdown-item nav-link" href="./documentacao.html">Documentação</a></li>
+                <li><a class="dropdown-item nav-link" href="./vagas.html">Vagas</a></li>
+                <li><a class="dropdown-item nav-link" href="./aniversarios.html">Aniversários do Mês</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./nutricao.html">Nutrição</a></li>
+            <li class="nav-item"><a class="nav-link" href="./capelania.html">Capelania</a></li>
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                href="./escalas.html" 
+                id="EscalasDropdown" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Escalas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="EscalasDropdown" style="background-color: #0000007f; ">
+                <li><a class="dropdown-item nav-link" href="./escala-administrativa.html">Administrativa</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-uco.html">UCO</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-residencia-medica.html">Residência Médica</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-oftamologia.html">Oftamologia</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-nefrologia.html">Nefrologia</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-internista.html">Internista</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-hemodinamica.html">Hemodinâmica</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-endoscopia.html">Endoscopia</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-emergencia.html">Emergência</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-cirurgia-geral.html">Cirurgia Geral</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-broncoscopia.html">Broncoscopia</a></li>
+                <li><a class="dropdown-item nav-link" href="./escala-uti.html">UTI</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./podcast.html">SilvestreCast</a></li>
+            <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <article class="container-escalas">
+    
+        <div class="fadeInDown" data-anime="200">
+          <h2 class="font-1-xxl cor-0">Escalas<span class="cor-p1">.</span></h2>
+        </div>
+    
+        <div class="selecao-cardapio escala-cultos escalas fadeInDown" data-anime="400">
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Plantão-Administrativo">Plantão Administrativo</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="UCO">UCO</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Residência-Médica">Residência Médica</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Oftalmologia">Oftalmologia</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Nefrologia">Nefrologia</button>
+            <button class="momento-cardapio escala-categoria font-2-xs active" data-target="Internista">Internista</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Hemodinâmica">Hemodinâmica</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Endoscopia">Endoscopia</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Emergência">Emergência</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Cirurgia-Geral">Cirurgia Geral</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="Broncoscopia">Broncoscopia</button>
+            <button class="momento-cardapio escala-categoria font-2-xs" data-target="UTI">UTI</button>
+        </div><br>
+
+        <div class="cardapio Plantão-Administrativo fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+    
+        <div class="cardapio UCO fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <div class="cardapio Residência-Médica fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+    
+        <div class="cardapio Oftalmologia fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <div class="cardapio Nefrologia fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+    
+        <div class="cardapio Internista fadeInDown" data-anime="600" style="display: block;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <div class="cardapio Hemodinâmica fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <div class="cardapio Endoscopia fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+    
+        <div class="cardapio Emergência fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <div class="cardapio Cirurgia-Geral fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+    
+        <div class="cardapio Broncoscopia fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+        <div class="cardapio UTI fadeInDown" data-anime="600" style="display: none;">
+            <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showTitle=0&src=Y2Fpby5yaWJlaXJvQGhhc2lsdmVzdHJlLm9yZy5icg&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZmI4NjEzMzNlNGNlYTZiZjQ0ZjZjNTAwOWZmNTZhMWMwOWNjMTRmMGU3YzJkMDc3ZDE4NThkNDE1NTQ4OWM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23D50000" 
+            style="border-width:0; border-radius: 30px; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);"  
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+            </iframe>
+        </div>
+
+    </article>
+
+    <footer class="footer-bg">
+        <div class="footer container">
+          <img src="./img/logo/has.svg" width="196" height="92" alt="Silvestre">
+          <div class="footer-contato" style="margin-top: 20px;">
+            <h3 class="font-1-s cor-0">Contato</h3>
+            <ul class="font-1-xs cor-0" style="margin-left: -30px;">
+              <li><a href="tel:+552130343000">+55 21 3034-3000</a></li>
+              <li><a href="mailto:ouvidoria.rio@hasilvestre.org.br">ouvidoria.rio@hasilvestre.org.br</a></li>
+              <li>Ladeira do Ascurra, 274</li>
+              <li>Cosme Velho, Rio de Janeiro - CEP: 22241-320</li>
+            </ul>
+            <div class="footer-redes">
+              <a href="https://www.instagram.com/hospitaladventistasilvestre/">
+                <img src="./img/redes/instagram.svg" width="22" height="22" alt="Instagram">
+              </a>
+              <a href="https://www.facebook.com/silvestreriodejaneiro">
+                <img src="./img/redes/facebook.svg" width="22" height="22" alt="Facebook">
+              </a>
+              <a href="https://www.youtube.com/@hospitaladventistasilvestre">
+                <img src="./img/redes/youtube.svg" width="22" height="22" alt="Youtube">
+              </a>
+              <a href="https://open.spotify.com/show/6vetKC6sIyxeW0kx5xt0Dc">
+                <img src="./img/redes/spotify.svg" width="22" height="22" alt="Spotify">
+              </a>
+            </div>
+          </div>
+          <div class="footer-informacoes">
+            <h3 class="font-1-s cor-0" style="margin-top: 20px;">Informações</h3>
+            <nav>
+              <ul class="font-1-xs cor-0" style="margin-left: -30px;">
+                <li><a href="./calendario-geral.html">Calendário</a></li>
+                <li><a href="./nutricao.html">Nutrição</a></li>
+                <li><a href="./capelania.html">Capelânia</a></li>
+                <li><a href="./escalas.html">Escalas</a></li>
+              </ul>
+            </nav>
+          </div>
+          <p class="footer-copy cor-0 fs-6">Silvestre © Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Cardápios
+        document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.momento-cardapio');
+        const cardapios = document.querySelectorAll('.cardapio');
+
+        buttons.forEach(button => {
+        button.addEventListener('click', () => {
+        // Remove a classe "active" de todos os botões
+        buttons.forEach(btn => btn.classList.remove('active'));
+        // Adiciona a classe "active" ao botão clicado
+        button.classList.add('active');
+
+        // Esconde todos os cardápios
+        cardapios.forEach(cardapio => (cardapio.style.display = 'none'));
+
+        // Mostra o cardápio correspondente
+        const target = button.getAttribute('data-target');
+        document.querySelector(`.cardapio.${target}`).style.display = 'block';
+        });
+    });
+    });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const observerOptions = {
+              root: null, // Usa a viewport como referência
+              rootMargin: '0px',
+              threshold: 0.1 // Ativa quando 10% do elemento estiver visível
+          };
+
+          // Função que será chamada quando o elemento estiver visível
+          function handleIntersection(entries, observer) {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      const target = entry.target;
+                      target.classList.add('ativo'); // Adiciona uma classe que ativa a animação
+                      observer.unobserve(target); // Para de observar após ativar
+                  }
+              });
+          }
+
+          const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+          // Seleciona todos os elementos que precisam da animação
+          const elementsToAnimate = document.querySelectorAll('.fadeInDown[data-anime]');
+          elementsToAnimate.forEach(element => {
+              observer.observe(element); // Começa a observar cada elemento
+          });
+      });
+    </script>
+
+</body>
+
+</html>

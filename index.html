@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SilvestreNet - Hospital Adventista</title>
+  <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+
+  <link rel="icon" href="./img/logo/Favicon.png" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<style>
+  /* Classe que ativa a animação */
+  .ativo {
+      animation: fadeInDown 1s ease-in-out forwards;
+  }
+
+  /* Exemplo de animação */
+  @keyframes fadeInDown {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+</style>
+
+<body class="introducao-body">
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./">
+        <img src="./img/logo/has.svg" width="196" height="92" alt="Silvestre">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="./servicos.html" 
+              id="ServicosDropdown" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="ServicosDropdown" style="background-color: #0000007f; ">
+              <li><a class="dropdown-item nav-link" href="https://ramal.hasilvestre.org.br/" target="_blank" rel="noopener noreferrer">Ramais</a></li>
+              <li><a class="dropdown-item nav-link" href="https://login-rh.sdasystems.org/Account/Login" target="_blank" rel="noopener noreferrer">RH Online</a></li>
+              <li><a class="dropdown-item nav-link" href="https://app.powerbi.com/home?experience=power-bi" target="_blank" rel="noopener noreferrer">Power BI</a></li>
+              <li><a class="dropdown-item nav-link" href="https://hasilvestre.neovero.com/" target="_blank" rel="noopener noreferrer">Neovero</a></li>
+              <li><a class="dropdown-item nav-link" href="http://qualidade/se/" target="_blank" rel="noopener noreferrer">MVGE</a></li>
+              <li><a class="dropdown-item nav-link" href="http://mvautorizadorguias.silvestresaude.com.br:8005/mvautorizadorguias/" target="_blank" rel="noopener noreferrer">Autorizador WEB</a></li>
+              <li><a class="dropdown-item nav-link" href="https://redesilvestre.com/exames/" target="_blank" rel="noopener noreferrer">Exames Online</a></li>
+              <li><a class="dropdown-item nav-link" href="https://pacs.lotusrad.com.br/netpacs/login" target="_blank" rel="noopener noreferrer">NetPacs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" 
+              id="institucionalDropdown" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false">
+              Institucional
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institucionalDropdown" style="background-color: #0000007f; ">
+              <li><a class="dropdown-item nav-link" href="./calendario-geral.html">Calendário Geral</a></li>
+              <li><a class="dropdown-item nav-link" href="./planejamento.html">Planejamento</a></li>
+              <li><a class="dropdown-item nav-link" href="./documentacao.html">Documentação</a></li>
+              <li><a class="dropdown-item nav-link" href="./vagas.html">Vagas</a></li>
+              <li><a class="dropdown-item nav-link" href="./aniversarios.html">Aniversários do Mês</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./nutricao.html">Nutrição</a></li>
+          <li class="nav-item"><a class="nav-link" href="./capelania.html">Capelania</a></li>
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="./escalas.html" 
+              id="EscalasDropdown" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false">
+              Escalas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="EscalasDropdown" style="background-color: #0000007f; ">
+              <li><a class="dropdown-item nav-link" href="./escala-administrativa.html">Administrativa</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-uco.html">UCO</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-residencia-medica.html">Residência Médica</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-oftamologia.html">Oftamologia</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-nefrologia.html">Nefrologia</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-internista.html">Internista</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-hemodinamica.html">Hemodinâmica</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-endoscopia.html">Endoscopia</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-emergencia.html">Emergência</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-cirurgia-geral.html">Cirurgia Geral</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-broncoscopia.html">Broncoscopia</a></li>
+              <li><a class="dropdown-item nav-link" href="./escala-uti.html">UTI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./podcast.html">SilvestreCast</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+          <li class="nav-item"><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link" href="./login.html">Trocar Unidade</a></li>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content" style="background-color: #0000006d;">
+                <div class="modal-header" style="background-color: #0000006d;">
+                  <h1 class="modal-title font-1-xl cor-0" id="exampleModalLabel" style="margin-left: auto; margin-right: auto;">Escolha uma unidade<span class="cor-p1">.</span></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 150px; background-color: red;"></button>
+                </div>
+                <div class="modal-body" style="background-color: #0000006d;">
+
+                    <style>
+
+                      *{
+                          margin: 0;
+                          padding: 0;
+                          box-sizing: border-box;
+                      }
+
+                      a{
+                        text-decoration: none;
+                        margin: 0;
+                        padding: 0;
+                      }
+                      
+                      .body{
+                          overflow: hidden;
+                      }
+                      
+                      .container-outros {
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%);
+                          width: 1000px;
+                          height: 600px;
+                          background: #f5f5f5;
+                          box-shadow: 0 30px 50px #dbdbdb;
+                      }
+                      
+                      .container-outros  .slide .item{
+                          width: 200px;
+                          height: 300px;
+                          position: absolute;
+                          top: 50%;
+                          transform: translate(0, -50%);
+                          border-radius: 20px;
+                          box-shadow: 0 30px 50px #505050;
+                          background-position: 50% 50%;
+                          background-size: cover;
+                          display: inline-block;
+                          transition: 0.5s;
+                      }
+                      
+                      .slide .item:nth-child(1),
+                      .slide .item:nth-child(2){
+                          top: 0;
+                          left: 0;
+                          transform: translate(0, 0);
+                          border-radius: 0;
+                          width: 100%;
+                          height: 100%;
+                      }
+                      
+                      
+                      .slide .item:nth-child(3){
+                          left: 50%;
+                      }
+                      .slide .item:nth-child(4){
+                          left: calc(50% + 220px);
+                      }
+                      .slide .item:nth-child(5){
+                          left: calc(50% + 440px);
+                      }
+                      
+                      /* here n = 0, 1, 2, 3,... */
+                      .slide .item:nth-child(n + 6){
+                          left: calc(50% + 660px);
+                          opacity: 0;
+                      }
+                      
+                      
+                      .item .content{
+                          position: absolute;
+                          top: 50%;
+                          left: 100px;
+                          width: 300px;
+                          text-align: left;
+                          color: #eee;
+                          transform: translate(0, -50%);
+                          font-family: system-ui;
+                          display: none;
+                      }
+
+                      .item .conteudo{
+                          position: absolute;
+                          top: 50%;
+                          left: 20px;
+                          width: 300px;
+                          text-align: left;
+                          color: #eee;
+                          transform: translate(0, -50%);
+                          font-family: system-ui;
+                          background-color: #0000006d;
+                          border-radius: 30px;
+                          padding: 10px;
+                      }
+                      
+                      
+                      .slide .item:nth-child(2) .content{
+                          display: block;
+                      }
+                      
+                      
+                      .content .name{
+                          font-size: 40px;
+                          text-transform: uppercase;
+                          font-weight: bold;
+                          opacity: 0;
+                          animation: animate 1s ease-in-out 1 forwards;
+                      }
+                      
+                      .content .des{
+                          margin-top: 10px;
+                          margin-bottom: 20px;
+                          opacity: 0;
+                          animation: animate 1s ease-in-out 0.3s 1 forwards;
+                      }
+                      
+                      .content button{
+                          padding: 10px 20px;
+                          border: none;
+                          cursor: pointer;
+                          opacity: 0;
+                          animation: animate 1s ease-in-out 0.6s 1 forwards;
+                      }
+                      
+                      
+                      @keyframes animate {
+                          from{
+                              opacity: 0;
+                              transform: translate(0, 100px);
+                              filter: blur(33px);
+                          }
+                      
+                          to{
+                              opacity: 1;
+                              transform: translate(0);
+                              filter: blur(0);
+                          }
+                      }
+                      
+                      
+                      
+                      .button{
+                          width: 100%;
+                          text-align: center;
+                          position: absolute;
+                          bottom: 20px;
+                      }
+                      
+                      .button button{
+                          width: 40px;
+                          height: 35px;
+                          border-radius: 8px;
+                          border: none;
+                          cursor: pointer;
+                          margin: 0 5px;
+                          border: 1px solid #000;
+                          transition: 0.3s;
+                      }
+                      
+                      .button button:hover{
+                          background: #ababab;
+                          color: #fff;
+                      }
+                    </style>
+                    
+                    <!--Font Awesome CDN-->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                         
+                    <div class="body">
+                        <div class="container-outros" style="border-radius: 50px;">
+                        
+                            <div class="slide">
+                        
+                                  <div class="item" style="border-radius: 50px;background-image: url(/img/backgrounds/banner-has.jpg);">
+                                      <div class="conteudo">
+                                          <div class="name font-2-xl">Silvestre</div>
+                                          <button class="botao-rounded" onclick="location.href='escala-administrativa.html';">Acessar</button>
+                                      </div>
+                                  </div>
+                                  <div class="item" style="border-radius: 50px;background-image: url(/img/backgrounds/botafogo.jpeg);">
+                                    <div class="conteudo">
+                                        <div class="name font-2-xl">Botafogo</div>
+                                        <button class="botao-rounded" onclick="location.href='escala-administrativa.html';">Acessar</button>
+                                    </div>
+                                  </div>
+                                  <div class="item" style="border-radius: 50px;background-image: url(/img/backgrounds/unidade_itaborai.jpg);">
+                                    <div class="conteudo">
+                                        <div class="name font-2-xl">Itaboraí</div>
+                                        <button onclick="location.href='escala-administrativa.html';" class="botao-rounded">Acessar</button>
+                                    </div>
+                                  </div>
+                                  <div class="item" style="border-radius: 50px;background-image: url(/img/backgrounds/banner-has.jpg);">
+                                    <div class="conteudo">
+                                        <div class="name font-2-xl">Silvestre</div>
+                                        <button onclick="location.href='escala-administrativa.html';" class="botao-rounded">Acessar</button>
+                                    </div>
+                                  </div>
+                                  <div class="item" style="border-radius: 50px;background-image: url(/img/backgrounds/botafogo.jpeg);">
+                                    <div class="conteudo">
+                                        <div class="name font-2-xl">Botafogo</div>
+                                        <button onclick="location.href='escala-administrativa.html';" class="botao-rounded">Acessar</button>
+                                    </div>
+                                  </div>
+                                  <div class="item" style="border-radius: 50px;background-image: url(/img/backgrounds/unidade_itaborai.jpg);">
+                                    <div class="conteudo">
+                                        <div class="name font-2-xl">Itaboraí</div>
+                                        <button onclick="location.href='escala-administrativa.html';" class="botao-rounded">Acessar</button>
+                                    </div>
+                                  </div>
+                        
+                            </div>
+                        
+                            <div class="button">
+                                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <script>
+                      let next = document.querySelector('.next')
+                    let prev = document.querySelector('.prev')
+                    
+                    next.addEventListener('click', function(){
+                        let items = document.querySelectorAll('.item')
+                        document.querySelector('.slide').appendChild(items[0])
+                    })
+                    
+                    prev.addEventListener('click', function(){
+                        let items = document.querySelectorAll('.item')
+                        document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+                    })
+                    </script>
+                                        
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide first-carousel" data-ride="carousel" data-interval="6000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner container">
+        <div class="carousel-item active">
+          <div class="introducao container">
+            <div class="introducao-conteudo">
+              <h1 class="font-1-xl cor-0 fadeInDown" data-anime="200">
+                Calendário geral Silvestre<span class="cor-p1">.</span>
+              </h1>
+              <p class="font-2-m cor-5 fadeInDown" data-anime="400">
+                Conheça os projetos e as datas importantes da nossa instituição.
+              </p>
+              <a class="botao-rounded fadeInDown " data-anime="600" href="./calendario-geral.html">Confira aqui</a>
+            </div>
+            <picture data-anime="800" class="fadeInDown">
+              <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+              <img src="./img/carrossel/calendario.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta." style="border-radius: 0 50% 0 50%;">
+            </picture>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="introducao container">
+            <div class="introducao-conteudo">
+              <h1 class="font-1-xl cor-0 fadeInDown" data-anime="200">
+                Cardápio do dia<span class="cor-p1">.</span>
+              </h1>
+              <p class="font-2-m cor-5 fadeInDown" data-anime="400">
+                Atualizações todos os dias às 10:00hrs.
+              </p>
+              <a class="botao-rounded fadeInDown " data-anime="600" href="./nutricao.html">Confira aqui</a>
+            </div>
+            <picture data-anime="800" class="fadeInDown">
+              <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+               <img src="./img/carrossel/cardapio.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta." style="border-radius: 50% 0 50% 0;">
+            </picture>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="introducao container">
+            <div class="introducao-conteudo">
+              <h1 class="font-1-xl cor-0 fadeInDown" data-anime="200">
+              Planejamento institucional<span class="cor-p1">.</span>
+              </h1>
+              <p class="font-2-m cor-5 fadeInDown" data-anime="400">
+              Acompanhe as metas e objetivos do seu setor e institucional.
+              </p>
+              <a class="botao-rounded fadeInDown " data-anime="600" href="./planejamento.html">Confira aqui</a>
+            </div>
+            <picture data-anime="800" class="fadeInDown">
+              <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+              <img src="./img/carrossel/metas.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta." style="border-radius: 0 50% 0 50%;">
+            </picture>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="introducao container">
+            <div class="introducao-conteudo">
+              <h1 class="font-1-xl cor-0 fadeInDown" data-anime="200">
+              SilvestreCast está ON<span class="cor-p1">!</span>
+              </h1>
+              <p class="font-2-m cor-5 fadeInDown" data-anime="400">
+              Novos episódios toda semana no Youtube e Spotify!
+              </p>
+              <a class="botao-rounded fadeInDown " data-anime="600" href="./podcast.html">Confira aqui</a>
+            </div>
+              <picture data-anime="800" class="fadeInDown">
+                <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+                <img src="./img/carrossel/podcast.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta." style="border-radius: 50% 0 50% 0;">
+              </picture>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="introducao container">
+            <div class="introducao-conteudo">
+              <h1 class="font-1-xl cor-0 fadeInDown" data-anime="200">
+              Horários da Van<span class="cor-p1">.</span>
+              </h1>
+              <p class="font-2-m cor-5 fadeInDown" data-anime="400">
+              Organize sua chegada e saída, confira os horários!
+              </p>
+              <a class="botao-rounded fadeInDown " data-anime="600" href="./horarios-van.html">Confira aqui</a>
+            </div>
+              <picture data-anime="800" class="fadeInDown">
+                <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+                <img src="./img/carrossel/has.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta." style="border-radius: 0 50% 0 50%;">
+              </picture>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  <article class="intranet-bg">
+    <div class="tecnologia intranet">
+
+      <div class="tecnologia-conteudo fadeInDown" data-anime="100">
+          <h2 class="font-1-xxl cor-0 fadeInDown" data-anime="200">O que é a SilvestreNet<span class="cor-p1">?</span></h2>
+          <p class="font-2-l cor-0 fadeInDown" data-anime="200" style="font-style: italic;">A SilvestreNet é uma rede privada de uma empresa usada para compartilhar informações, documentos e ferramentas com os funcionários. Ela facilita a comunicação interna e organiza os recursos de trabalho em um único lugar.</p>
+          <div class="intranet-vantagens">
+            <div>
+              <div id="btn-serve" class="d-flex button-valores fadeInDown" data-anime="400" style="gap: 15px;">
+                <div><img src="./img/icones/mais.png" width="24" height="24" alt=""></div>
+                <h3 class="font-1-m cor-0">Para o que serve?</h3>
+              </div>
+            </div>
+            <div>
+              <div id="btn-acesso" class="d-flex button-valores fadeInDown" data-anime="400" style="gap: 15px;">
+                <div><img src="./img/icones/mais.png" width="24" height="24" alt=""></div>
+                <h3 class="font-1-m cor-0">Como acessar?</h3>
+              </div>
+            </div>
+            <div>
+              <div id="btn-function" class="d-flex button-valores fadeInDown" data-anime="400" style="gap: 15px;">
+                <div><img src="./img/icones/mais.png" width="24" height="24" alt=""></div>
+                <h3 class="font-1-m cor-0">Quais as funcionalidades?</h3>
+              </div>
+            </div>
+          </div>
+          
+          <!-- As descrições serão colocadas aqui abaixo -->
+          <div class="descricao-container">
+            <p class="dsc cor-0" id="dsc-serve">“A intranet serve para facilitar a comunicação, o compartilhamento de informações e a colaboração entre os funcionários de uma empresa.”.</p>
+            <p class="dsc cor-0" id="dsc-acesso">“Acessando pelo link disponibilizado no MV ou digitando /silvestrenet no seu navegador”.</p>
+            <p class="dsc cor-0" id="dsc-function">“Calendário, tarefas, chat, fóruns, documentos, notícias internas”.</p>
+          </div>
+          
+      </div>
+
+      <script>
+        $(document).ready(function() {
+            // Função para ocultar todas as descrições
+            function hideAllDescriptions() {
+                $(".dsc").removeClass("active");
+            }
+
+            // Função para desativar todos os botões
+            function removeActiveClassFromButtons() {
+                $(".button-valores").removeClass("active-btn");
+            }
+
+            // Ao clicar em 'Serve'
+            $("#btn-serve").click(function() {
+                hideAllDescriptions();
+                removeActiveClassFromButtons();
+                $("#dsc-serve").addClass("active");
+                $(this).addClass("active-btn");
+            });
+
+            // Ao clicar em 'Visão'
+            $("#btn-acesso").click(function() {
+                hideAllDescriptions();
+                removeActiveClassFromButtons();
+                $("#dsc-acesso").addClass("active");
+                $(this).addClass("active-btn");
+            });
+
+            // Ao clicar em 'Missão'
+            $("#btn-function").click(function() {
+                hideAllDescriptions();
+                removeActiveClassFromButtons();
+                $("#dsc-function").addClass("active");
+                $(this).addClass("active-btn");
+            });
+
+        });
+      </script>
+
+      <div class="intranet-img fadeInDown" data-anime="200">
+        <img src="./img/backgrounds/intranet.png" alt="">
+      </div>
+
+    </div>
+  </article>
+
+  <article class="tecnologia-bg" style="margin-top: 120px;">
+    <div class="tecnologia container-tec">
+      <div class="tecnologia-imagem fadeInDown" data-anime="200">
+        <img src="./img/backgrounds/valores.jpg" width="1200" height="1920" alt="">
+      </div>
+
+        <div class="tecnologia-conteudo fadeInDown" data-anime="100">
+          <h2 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Salvar é nossa natureza<span class="cor-p1">.</span></h2>
+          <p class="font-2-l cor-5 fadeInDown" data-anime="200">Credibilidade, qualidade e excelência. Por esses e outros motivos, a Rede Adventista Silvestre de Saúde é considerada referência no cuidado e atenção especial que dedica aos seus pacientes.</p>
+          <div class="tecnologia-vantagens">
+            <div>
+              <div id="btn-proposito" class="d-flex button-valores fadeInDown" data-anime="200" style="gap: 15px;">
+                <img src="./img/icones/mais.png" width="24" height="24" alt="">
+                <h3 class="font-1-m cor-0">Propósito</h3>
+              </div>
+            </div>
+            <div>
+              <div id="btn-visao" class="d-flex button-valores fadeInDown" data-anime="250" style="gap: 15px;">
+                <img src="./img/icones/mais.png" width="24" height="24" alt="">
+                <h3 class="font-1-m cor-0">Visão</h3>
+              </div>
+            </div>
+            <div>
+              <div id="btn-missao" class="d-flex button-valores fadeInDown" data-anime="300" style="gap: 15px;">
+                <img src="./img/icones/mais.png" width="24" height="24" alt="">
+                <h3 class="font-1-m cor-0">Missão</h3>
+              </div>
+            </div>
+            <div>
+              <div id="btn-valores" class="d-flex button-valores fadeInDown" data-anime="350" style="gap: 15px;">
+                <img src="./img/icones/mais.png" width="24" height="24" alt="">
+                <h3 class="font-1-m cor-0">Valores</h3>
+              </div>
+            </div>
+          </div>
+          
+          <!-- As descrições serão colocadas aqui abaixo -->
+          <div class="descricao-container">
+            <p class="descricao cor-0" id="descricao-proposito">“Expandir o Ministério de Cura”.</p>
+            <p class="descricao cor-0" id="descricao-visao">“Tornar-se uma referência na construção de um futuro mais saudável sustentado na fé, na inovação e no cuidado humanizado”.</p>
+            <p class="descricao cor-0" id="descricao-missao">“Servir, Curar e Salvar”.</p>
+            <p class="descricao cor-0" id="descricao-valores">“Excelência, Espiritualidade, Valorização das Pessoas, Honestidade, Qualidade, Humanização, Segurança do Paciente e Sustentabilidade”.</p>
+          </div>
+
+          <script>
+            $(document).ready(function() {
+                // Função para ocultar todas as descrições
+                function hideAllDescriptions() {
+                    $(".descricao").removeClass("active");
+                }
+    
+                // Função para desativar todos os botões
+                function removeActiveClassFromButtons() {
+                    $(".button-valores").removeClass("active-btn");
+                }
+    
+                // Ao clicar em 'Propósito'
+                $("#btn-proposito").click(function() {
+                    hideAllDescriptions();
+                    removeActiveClassFromButtons();
+                    $("#descricao-proposito").addClass("active");
+                    $(this).addClass("active-btn");
+                });
+    
+                // Ao clicar em 'Visão'
+                $("#btn-visao").click(function() {
+                    hideAllDescriptions();
+                    removeActiveClassFromButtons();
+                    $("#descricao-visao").addClass("active");
+                    $(this).addClass("active-btn");
+                });
+    
+                // Ao clicar em 'Missão'
+                $("#btn-missao").click(function() {
+                    hideAllDescriptions();
+                    removeActiveClassFromButtons();
+                    $("#descricao-missao").addClass("active");
+                    $(this).addClass("active-btn");
+                });
+    
+                // Ao clicar em 'Valores'
+                $("#btn-valores").click(function() {
+                    hideAllDescriptions();
+                    removeActiveClassFromButtons();
+                    $("#descricao-valores").addClass("active");
+                    $(this).addClass("active-btn");
+                });
+            });
+        </script>
+          
+      </div>
+    </div>
+  </article>
+
+  <section class="parceiros-bg" aria-label="Nossos Parceiros">
+    <div class="parceiros">
+      <h2 class="font-1-xxl cor-12">Quais sistemas utilizamos<span class="cor-p1">?</span></h2>
+      <!--<ul>
+        <li>
+          <img src="./img/servicos/ramal.png" 
+               alt="Lita de Ramais" 
+               width="50" 
+               height="50" 
+               data-title="Lista de Ramais" 
+               data-desc="A lista de ramais é um recurso que organiza os números internos de telefone para facilitar a comunicação entre setores, como enfermaria, emergência, administração, laboratório e outros departamentos. Geralmente, inclui o nome do setor, a função associada ao ramal (ex.: recepção, coordenação) e o número, permitindo uma rápida localização e contato eficiente dentro da instituição.">
+        </li>
+        <li>
+          <img src="./img/servicos/contracheque.png" 
+               alt="Contra Cheque" 
+               width="50" 
+               height="50" 
+               data-title="Contra Cheque" 
+               data-desc="Versão digital do demonstrativo de pagamento, acessível por meio de um portal ou aplicativo. Ele detalha informações como salário, descontos, benefícios e impostos, permitindo aos funcionários consultar e armazenar seus comprovantes de forma prática e segura, a qualquer momento e lugar.">
+        </li>
+        <li>
+          <img src="./img/servicos/power-bi.png" 
+               alt="Power BI" 
+               width="50" 
+               height="50" 
+               data-title="Power BI" 
+               data-desc="O Power BI é uma ferramenta de análise de dados da Microsoft que permite criar relatórios e dashboards interativos. Ele conecta, organiza e visualiza informações de diversas fontes, ajudando na tomada de decisões com base em insights claros e acessíveis em tempo real.">
+        </li>
+        <li>
+          <img src="./img/servicos/neovero.png" 
+               alt="Neovero" 
+               width="60" 
+               height="60" 
+               data-title="Neovero" 
+               data-desc="O Neovero é um sistema de gestão especializado em áreas como saúde, assistência social e administração pública. Ele integra e automatiza processos, oferecendo funcionalidades para controle de dados, geração de relatórios e otimização de serviços, promovendo eficiência e organização nas operações.">
+        </li>
+        <li>
+          <img src="./img/servicos/mvge.png" 
+               alt="MVGE" 
+               width="50" 
+               height="50" 
+               data-title="MVGE" 
+               data-desc="O MVGE (MV Gestão Estratégica) é um sistema de gestão hospitalar que auxilia no planejamento, monitoramento e análise de desempenho de instituições de saúde. Ele oferece ferramentas para controle financeiro, gestão de recursos e indicadores, facilitando a tomada de decisões estratégicas e operacionais.">
+        </li>
+        <li>
+          <img src="./img/servicos/autorizador-web.png" 
+               alt="Autorizador WEB" 
+               width="50" 
+               height="50" 
+               data-title="Autorizador WEB" 
+               data-desc="É uma plataforma online que agiliza e centraliza o processo de solicitação e aprovação de procedimentos médicos, exames e internações. Ele permite que prestadores de serviços de saúde enviem pedidos e acompanhem status em tempo real, garantindo maior eficiência e transparência na gestão de autorizações.">
+        </li>
+        <li>
+          <img src="./img/servicos/exames.png" 
+               alt="Exames" 
+               width="50" 
+               height="50" 
+               data-title="Exames" 
+               data-desc="A entrega de exames online é um serviço que disponibiliza os resultados de exames médicos pela internet, através de um portal ou aplicativo seguro. Ele permite que pacientes acessem e baixem seus laudos de forma prática, a qualquer momento e de qualquer lugar, garantindo agilidade e comodidade no acesso às informações de saúde.">
+        </li>
+        <li>
+          <img src="./img/servicos/netpacs.png" 
+               alt="Netpacs" 
+               width="50" 
+               height="50" 
+               data-title="Netpacs" 
+               data-desc="O NetPACS é um sistema de arquivamento e comunicação de imagens médicas baseado na web, que permite o armazenamento, visualização e compartilhamento de exames como radiografias, tomografias e ultrassonografias. Ele facilita o acesso remoto e seguro às imagens, proporcionando agilidade e eficiência no diagnóstico e no acompanhamento dos pacientes.">
+        </li>
+      </ul>
+      <div class="description">
+        <h3 class="title"></h3>
+        <p class="desc"></p>
+      </div>-->
+      <button class="botao-rounded container" href="./servicos.html" style="margin-left: auto; margin-right: auto; display: block; width: max-content;">Ver Mais</button>
+    </div>
+  </section>
+
+  <div class="tecnologia container-podcast">
+    <div class="podcast-conteudo">
+  
+      <div class="coluna1 fadeInDown" data-anime="100">
+        <h1 class="font-1-xl cor-0 fadeInDown" data-anime="200">SilvestreCast</h2>
+        <h2 class="font-1-xl cor-0 fadeInDown" data-anime="250">O Podcast para profissionais e amantes da Saúde<span class="cor-p1">!</span></h2>
+        <p class="font-2-m cor-5 fadeInDown" data-anime="250">
+          Descubra os bastidores do universo hospitalar com o SilvestreCast! Toda semana, mergulhamos nos desafios e inovações da saúde, trazendo especialistas, histórias inspiradoras, e debates sobre temas que impactam pacientes, profissionais e gestores da área.
+          <br><br>
+          🎧 Disponível no Spotify, Youtube e nas principais plataformas.
+          <br><br>
+          🔗 Acompanhe, compartilhe e faça parte da nossa comunidade hospitalar!<br><br>
+          SilvestreCast: Onde a Saúde Ganha Voz!</p>
+
+          <a class="botao-rounded fadeInDown" data-anime="250" href="./podcast.html" style="margin-bottom: -10px; margin-top: -20px;">Confira aqui</a>
+      </div>
+  
+      <div class="coluna2 fadeInDown" data-anime="100">
+        <div id="carouselExampleIndicators2" class="carousel slide first-carousel podcast" data-ride="carousel" data-interval="6000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner container" id="silvestrecast">
+            <!-- Slides do carrossel -->
+            <div class="carousel-item active">
+              <div class="iframe-podcast">
+                <iframe data-anime="800" class="fadeInDown" width="560" height="315" src="https://www.youtube.com/embed/13cucxohq5A?si=vv2GCxRelZwQKCUO" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <!-- Outras slides... -->
+            <div class="carousel-item">
+              <div class="iframe-podcast">
+                <iframe data-anime="800" class="fadeInDown" width="560" height="315" src="https://www.youtube.com/embed/13cucxohq5A?si=vv2GCxRelZwQKCUO" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="iframe-podcast">
+                <iframe data-anime="800" class="fadeInDown" width="560" height="315" src="https://www.youtube.com/embed/13cucxohq5A?si=vv2GCxRelZwQKCUO" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="iframe-podcast">
+                <iframe data-anime="800" class="fadeInDown" width="560" height="315" src="https://www.youtube.com/embed/13cucxohq5A?si=vv2GCxRelZwQKCUO" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <article class="perguntas fadeInDown" data-anime="100">
+    <h2 class="font-1-xxl cor-12">Perguntas frequentes<span class="cor-p1">.</span></h2>
+
+    <dl class="questoes">
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Como acessar as escalas?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativa">Cada instituição possui suas próprias escalas, que estão divididas por setores. Basta clicar na unidade (Rio de Janeiro, Botafogo ou Itaboraí), depois escolher o setor e visualizar a escala. Você poderá, inclusive, baixar uma ou mais escalas para o seu calendário pessoal do celular ou computador.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como entrar em contato com a ouvidoria para colaboradores do Hospital Adventista Silvestre?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Nosso SAC Silvestre está localizado na aba "Contatos" em nossa Intranet buscando a melhor opção para nossos colaboradores.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Quais processos devo seguir em caso de acidente no trabalho?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Em caso de acidente no trabalho, os processos a serem seguidos são essenciais para garantir a segurança do trabalhador, a conformidade legal e o devido registro do ocorrido.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Posso retirar meu nome dos aniversariantes?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">Sim! Envie um e-mail solicitando a retirada para: comunicação.silvestre@hasilvestre.org.br</dd>
+      </div>
+    </dl>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./img/logo/has.svg" width="196" height="92" alt="Silvestre">
+      <div class="footer-contato" style="margin-top: 20px;">
+        <h3 class="font-1-s cor-0">Contato</h3>
+        <ul class="font-1-xs cor-0" style="margin-left: -30px;">
+          <li><a href="tel:+552130343000">+55 21 3034-3000</a></li>
+          <li><a href="mailto:ouvidoria.rio@hasilvestre.org.br">ouvidoria.rio@hasilvestre.org.br</a></li>
+          <li>Ladeira do Ascurra, 274</li>
+          <li>Cosme Velho, Rio de Janeiro - CEP: 22241-320</li>
+        </ul>
+        <div class="footer-redes">
+          <a href="https://www.instagram.com/hospitaladventistasilvestre/">
+            <img src="./img/redes/instagram.svg" width="22" height="22" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/silvestreriodejaneiro">
+            <img src="./img/redes/facebook.svg" width="22" height="22" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/@hospitaladventistasilvestre">
+            <img src="./img/redes/youtube.svg" width="22" height="22" alt="Youtube">
+          </a>
+          <a href="https://open.spotify.com/show/6vetKC6sIyxeW0kx5xt0Dc">
+            <img src="./img/redes/spotify.svg" width="22" height="22" alt="Spotify">
+          </a>
+        </div>
+      </div>
+      <div class="footer-informacoes">
+        <h3 class="font-1-s cor-0" style="margin-top: 20px;">Informações</h3>
+        <nav>
+          <ul class="font-1-xs cor-0" style="margin-left: -30px;">
+            <li><a href="./calendario-geral.html">Calendário</a></li>
+            <li><a href="./nutricao.html">Nutrição</a></li>
+            <li><a href="./capelania.html">Capelânia</a></li>
+            <li><a href="./escalas.html">Escalas</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy cor-0 fs-6">Silvestre © Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            root: null, // Usa a viewport como referência
+            rootMargin: '0px',
+            threshold: 0.1 // Ativa quando 10% do elemento estiver visível
+        };
+
+        // Função que será chamada quando o elemento estiver visível
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    target.classList.add('ativo'); // Adiciona uma classe que ativa a animação
+                    observer.unobserve(target); // Para de observar após ativar
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+        // Seleciona todos os elementos que precisam da animação
+        const elementsToAnimate = document.querySelectorAll('.fadeInDown[data-anime]');
+        elementsToAnimate.forEach(element => {
+            observer.observe(element); // Começa a observar cada elemento
+        });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translação CSS</title>
+  <style>
+    /* Estilização do corpo */
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000; /* Fundo preto para realçar a imagem */
+    }
+
+    /* Container da imagem */
+    .container {
+      width: 400px; /* Ajuste o tamanho conforme necessário */
+      height: 400px;
+      position: relative;
+    }
+
+    /* Animação de rotação */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Aplicar animação */
+    .rotating-image {
+      width: 100%;
+      height: 100%;
+      background: url('intranet.png') no-repeat center/contain; /* Adiciona a imagem */
+      animation: rotate 10s linear infinite; /* Tempo e rotação infinita */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rotating-image"></div>
+  </div>
+</body>
+</html>
